@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="983.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentsoftware.OverviewController">
+
+    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fitHeight="191.0" fitWidth="200.0" layoutX="25.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@exampleSchoolLogo.png" />
+        </image>
+    </ImageView>
+
+    <VBox alignment="TOP_LEFT" spacing="20.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+
+        <Label alignment="CENTER" text="Dashboard" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font></Label>
+
+        <Button fx:id="addStudentButton" onAction="#openAddStudentWindow" prefWidth="200" text="Student hinzufügen" />
+        <Button fx:id="logoutButton" onAction="#handleLogout" prefWidth="200" text="Logout" />
+
+    </VBox>
+   <Label layoutX="240.0" layoutY="67.0" text="List of school years : ">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Label>
+
+        <VBox alignment="TOP_LEFT" spacing="10" />
+         <ListView fx:id="studentListView" layoutX="240.0" layoutY="118.0" prefHeight="200" prefWidth="400" />
+         <ComboBox fx:id="yearComboBox" layoutX="240.0" layoutY="93.0" onAction="#loadStudentsForYear" prefWidth="200" promptText="2023" />
+
+</AnchorPane>

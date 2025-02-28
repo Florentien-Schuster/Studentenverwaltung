@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="270.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentsoftware.DetailStudentController">
+    <Label layoutX="14.0" layoutY="14.0" text="Student details:">
+        <font>
+            <Font size="17.0" />
+        </font>
+    </Label>
+   <Button fx:id="deleteButton" layoutX="466.0" layoutY="237.0" mnemonicParsing="false" text="Delete this Student" textFill="#ff0000c6" underline="true" />
+   <Label layoutX="26.0" layoutY="52.0" text="Name:" />
+   <Label layoutX="26.0" layoutY="79.0" text="Age:" />
+   <Label layoutX="24.0" layoutY="107.0" text="Adress:" />
+   <Label layoutX="24.0" layoutY="138.0" />
+   <Label fx:id="nameLabel" layoutX="70.0" layoutY="52.0" prefHeight="17.0" prefWidth="246.0" text="StudentName" />
+   <Label fx:id="ageLabel" layoutX="70.0" layoutY="79.0" prefHeight="17.0" prefWidth="246.0" text="StudentAge" />
+   <Label fx:id="addressLabel" layoutX="72.0" layoutY="107.0" prefHeight="17.0" prefWidth="246.0" text="City" />
+   <Separator layoutX="77.0" layoutY="169.0" prefHeight="2.0" prefWidth="468.0" />
+   <Separator layoutX="149.0" layoutY="138.0" orientation="VERTICAL" prefHeight="99.0" prefWidth="0.0" />
+   <Separator layoutX="222.0" layoutY="138.0" orientation="VERTICAL" prefHeight="99.0" prefWidth="0.0" />
+   <Separator layoutX="294.0" layoutY="138.0" orientation="VERTICAL" prefHeight="99.0" prefWidth="0.0" />
+   <Separator layoutX="342.0" layoutY="138.0" orientation="VERTICAL" prefHeight="99.0" prefWidth="0.0" />
+   <Separator layoutX="417.0" layoutY="138.0" orientation="VERTICAL" prefHeight="99.0" prefWidth="0.0" />
+   <Label layoutX="91.0" layoutY="147.0" prefHeight="17.0" prefWidth="39.0" text="Math" />
+   <Label layoutX="167.0" layoutY="147.0" prefHeight="17.0" prefWidth="52.0" text="German" />
+   <Label layoutX="238.0" layoutY="147.0" prefHeight="17.0" prefWidth="80.0" text="English" />
+   <Label layoutX="300.0" layoutY="147.0" prefHeight="17.0" prefWidth="45.0" text="Biology" />
+   <Label layoutX="357.0" layoutY="147.0" prefHeight="17.0" prefWidth="80.0" text="Chemistry" />
+   <Label layoutX="437.0" layoutY="147.0" prefHeight="17.0" prefWidth="104.0" text="Computer Science" />
+   <Label fx:id="GradeMath" layoutX="91.0" layoutY="179.0" prefHeight="17.0" prefWidth="45.0" text="GradeMathe" />
+   <Label fx:id="GradeGerman" layoutX="167.0" layoutY="179.0" prefHeight="17.0" prefWidth="45.0" text="GradeGerman" />
+   <Label fx:id="GradeEnglish" layoutX="238.0" layoutY="179.0" prefHeight="17.0" prefWidth="45.0" text="GradeEnglish" />
+   <Label fx:id="GradeBiology" layoutX="302.0" layoutY="179.0" prefHeight="17.0" prefWidth="35.0" text="GradeBiology" />
+   <Label fx:id="GradeChemistry" layoutX="357.0" layoutY="179.0" prefHeight="17.0" prefWidth="45.0" text="GradeChemistry" />
+   <Label fx:id="GradeComputerScience" layoutX="463.0" layoutY="179.0" prefHeight="17.0" prefWidth="52.0" text="GradeComputerScience" />
+   <TextField fx:id="courseTextField" layoutX="193.0" layoutY="48.0" promptText="Course" />
+   <TextField fx:id="gradeTextField" layoutX="349.0" layoutY="48.0" promptText="Grade" />
+   <Button fx:id="updateGradeButton" layoutX="193.0" layoutY="84.0" mnemonicParsing="false" text="Update Grades" onAction="#handleUpdateGrade"/>
+   <Label fx:id="errorLabel" layoutX="190.0" layoutY="19.0" prefHeight="17.0" prefWidth="306.0" />
+</AnchorPane>
